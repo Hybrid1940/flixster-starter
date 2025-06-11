@@ -16,7 +16,6 @@ const Organization = ({setMovies, clearClick, allMovies}) => {
     };
     const response = await fetch(url, options);
     const newMovies = await response.json();
-    console.log(newMovies);
     setMovies(newMovies.results);
   }
 
@@ -32,7 +31,6 @@ const Organization = ({setMovies, clearClick, allMovies}) => {
         }
         return 0
       });
-      console.log(sortMovies);
       setMovies(sortMovies);
     }else if(event.target.value === "recent"){
        sortMovies = [...allMovies].sort((a,b) => {
@@ -55,9 +53,12 @@ const Organization = ({setMovies, clearClick, allMovies}) => {
         }
         return 0
       });
-      console.log(sortMovies);
       setMovies(sortMovies);
     }
+  }
+
+  function clearClickAnonymous(){
+    clearClick(1)
   }
 
   return (
@@ -65,7 +66,7 @@ const Organization = ({setMovies, clearClick, allMovies}) => {
       <form>
         <input type='text'></input>
         <button type='submit' onClick={searchClick}>Search</button>
-        <button type='submit' onClick={clearClick(1)}>Clear</button>
+        <button type='submit' onClick={() => clearClickAnonymous()}>Clear</button>
       </form>
       <select onChange={sort} style={{marginLeft:"10px"}} name='sortOptions' id='sortOptions'>
         <option value="none">Sort</option>

@@ -54,14 +54,17 @@ const App = () => {
   }else{
     return (
       <div className="App">
-        <header>
+        <header style={{paddingTop:"20px", paddingBottom:"20px", backgroundColor: "#454a52", color:"white"}}>
           <h1>Flixter!!!</h1>
+           <Organization allMovies = {movies} clearClick = {handleClick} setMovies = {setMovies}/>
         </header>
         <main>
-          <Organization allMovies = {movies} clearClick = {handleClick} setMovies = {setMovies}/>
           <MovieList allMovies = {movies} setPageNum = {setPageNum}/>
           <button style={{marginTop:"30px", marginBottom:"30px"}} onClick={() =>handleClick()}>Load More Movies</button>
         </main>
+        <footer>
+          <h3>Made by Mahesh Bachu</h3>
+        </footer>
       </div>
     )
   }

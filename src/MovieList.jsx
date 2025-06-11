@@ -10,7 +10,7 @@ function MovieList(allMovies) {
       {
         allMovies.allMovies.map(({id, original_title, vote_average, poster_path, overview, backdrop_path, release_date}) => {
           //still need to add genre and releaseDate
-          return <MovieCard backdrop = {backdrop_path} releaseDate = {release_date} overView = {overview} key={id} img = {poster_path} rating = {vote_average} title = {original_title}/>
+          return <MovieCard backdrop = {backdrop_path} releaseDate = {release_date} overView = {overview} id = {id} key={id} img = {poster_path} rating = {vote_average} title = {original_title}/>
         })
       }
     </div>
