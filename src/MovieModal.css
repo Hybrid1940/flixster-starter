@@ -10,13 +10,13 @@
    width: 100%; /* Full width */
    height: 100%; /* Full height */
    overflow: auto; /* Enable scroll if needed */
-   background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+   background-color: rgba(0,0,0,0.5); /* Black w/ opacity */
 }
 
 /*styling for the actual modal that will hold songs */
 .modal-content {
    background-color: #fefefe;
-   box-shadow: 10px 10px 10px;
+   box-shadow: 3px 3px 3px;
    margin: auto; /* 15% from the top and centered */
    padding: 20px;
    border: 1px solid #888;

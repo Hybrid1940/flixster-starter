@@ -54,7 +54,6 @@ const App = () => {
   }else{
     return (
       <div className="App">
-        <MovieModal />
         <header>
           <h1>Flixter!!!</h1>
         </header>
