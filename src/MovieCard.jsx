@@ -6,8 +6,10 @@ import { useState } from 'react'
 function MovieCard(props) {
   var image = `https://image.tmdb.org/t/p/original/${props.img}`;
   var backDropImage = `https://image.tmdb.org/t/p/original/${props.backdrop}`;
+  var trailerStarter = "https://www.youtube.com/embed/"
+  const [trailer, setTrailer] = useState(trailerStarter);
   const [showModal, setShowModal] =  useState(false);
-  const [movieDetails, setMovieDetails] = useState()
+  const [movieDetails, setMovieDetails] = useState();
 
   useEffect (() => {
     loadDetails()
@@ -16,6 +18,7 @@ function MovieCard(props) {
   const loadDetails = async() => {
     //get additional details
     const url = `https://api.themoviedb.org/3/movie/${props.id}?language=en-US`;
+    const videoUrl = `https://api.themoviedb.org/3/movie/${props.id}/videos?language=en-US`;
     const options = {
       method: 'GET',
       headers: {
@@ -26,6 +29,16 @@ function MovieCard(props) {
     const newFetch =  await fetch(url, options);
     const newDetails = await newFetch.json();
     setMovieDetails(newDetails);
+
+    const newVideosFetch =  await fetch(videoUrl, options);
+    const videos = await newVideosFetch.json();
+    for(let i = 0; i < videos.results.length; i++){
+      if(videos.results[i].name.includes("Official Trailer")){
+        setTrailer(trailerStarter+videos.results[i].key);
+        
+        break;
+      }
+    }
   }
 
   const turnModalOff = (event) => {
@@ -58,7 +71,8 @@ function MovieCard(props) {
                     return<p>{name.name}</p>
                   })
                 }
-                {/* <video>hey</video> */}
+                <iframe width="420" height="315" src={trailer}></iframe>
+                <br></br>
                 <button onClick={turnModalOff}>Close</button>
             </div>
         </div>
