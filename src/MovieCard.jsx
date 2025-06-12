@@ -10,12 +10,17 @@ function MovieCard(props) {
   const [trailer, setTrailer] = useState(trailerStarter);
   const [showModal, setShowModal] = useState(false);
   const [movieDetails, setMovieDetails] = useState();
-  const [likeColor, setLikeColor] = useState("white");
-  const [watchColor, setWatchColor] = useState("white");
+  const [likeColor, setLikeColor] = useState(
+    props.favoritesList.includes(props.movie) ? "red" : "white"
+  );
+  const [watchColor, setWatchColor] = useState(
+    props.watchedList.includes(props.movie) ? "red" : "white"
+  );
 
   useEffect(() => {
     loadDetails();
   }, []);
+  //pass down the favorites and watched arrays, check if our id belongs in there, if so set to that color
 
   const loadDetails = async () => {
     //get additional details
@@ -38,7 +43,6 @@ function MovieCard(props) {
     for (let i = 0; i < videos.results.length; i++) {
       if (videos.results[i].name.includes("Official Trailer")) {
         setTrailer(trailerStarter + videos.results[i].key);
-
         break;
       }
     }

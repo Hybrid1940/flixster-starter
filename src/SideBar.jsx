@@ -14,6 +14,8 @@ const SideBar = ({ setMovies, likedList, watchedList, OGMovies }) => {
   return (
     <div
       style={{
+        marginLeft: "6%",
+        marginTop: "40px",
         display: "flex",
         flexDirection: "column",
         alignContent: "center",
