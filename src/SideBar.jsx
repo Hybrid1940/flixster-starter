@@ -30,7 +30,6 @@ const SideBar = ({
         alignContent: "center",
         width: "8%",
         position: "relative",
-        border: "3px solid red",
       }}
     >
       <button
