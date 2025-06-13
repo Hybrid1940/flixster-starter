@@ -17,6 +17,7 @@ const App = () => {
   const [OGMovies, setOGMovies] = useState(null);
   const [favorites, setFavorites] = useState([]);
   const [watched, setWatched] = useState([]);
+  const [viewLoadMovies, setViewLoadMovies] = useState(true);
   /*loads movies based conditionally
    based on if they were previously loaded and will
     append new movies on the end of the current list*/
@@ -73,6 +74,7 @@ const App = () => {
         </header>
         <main style={{ display: "flex" }}>
           <SideBar
+            setViewLoadMovies={setViewLoadMovies}
             likedList={favorites}
             watchedList={watched}
             setMovies={setMovies}
@@ -87,12 +89,14 @@ const App = () => {
               setFavorites={setFavorites}
               allMovies={movies}
             />
-            <button
-              style={{ marginTop: "30px", marginBottom: "30px" }}
-              onClick={() => handleClick()}
-            >
-              Load More Movies
-            </button>
+            {viewLoadMovies && (
+              <button
+                style={{ marginTop: "30px", marginBottom: "30px" }}
+                onClick={() => handleClick()}
+              >
+                Load More Movies
+              </button>
+            )}
           </div>
         </main>
         <footer>
