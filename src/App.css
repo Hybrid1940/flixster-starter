@@ -1,5 +1,9 @@
 .App {
   text-align: center;
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 .App-header {
@@ -10,6 +14,27 @@
   justify-content: space-evenly;
   color: white;
   padding: 20px;
+}
+header {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  background-color: #bf5700;
+  color: white;
+}
+main {
+  display: flex;
+   flex: 1;
+}
+footer {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  background-color: #bf5700;
+  color: white;
+}
+
+.loadMore {
+  margin-top: 30px;
+  margin-bottom: 30px;
 }
 
 @media (max-width: 600px) {

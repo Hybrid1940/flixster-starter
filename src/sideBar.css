@@ -1,0 +1,13 @@
+nav {
+    margin-left: 6%;
+    margin-top: 40px;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    width: 8%;
+    position: relative;
+}
+.sideButton {
+    margin-top: 20px;
+    font-size: 1vw;
+}

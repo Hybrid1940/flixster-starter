@@ -2,6 +2,7 @@ import React from "react";
 import ReactDOM from "react-dom";
 import PropTypes from "prop-types";
 import MovieCard from "./MovieCard";
+import "./MovieList.css";
 
 function MovieList({
   allMovies,
@@ -13,16 +14,7 @@ function MovieList({
 }) {
   console.log({ allMovies });
   return (
-    <section
-      style={{
-        flexWrap: "wrap",
-        marginTop: "40px",
-        width: "75%",
-        marginLeft: "12.5%",
-        display: "flex",
-        justifyContent: "space-around",
-      }}
-    >
+    <section>
       {allMovies.map((movie) => {
         //still need to add genre and releaseDate
         return (

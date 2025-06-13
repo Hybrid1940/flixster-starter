@@ -2,6 +2,8 @@ import React, { useEffect } from "react";
 import ReactDOM from "react-dom";
 import PropTypes from "prop-types";
 import { useState } from "react";
+import "./MovieCard.css";
+import "./MovieModal.css";
 
 function MovieCard(props) {
   var image = `https://image.tmdb.org/t/p/original/${props.img}`;
@@ -93,25 +95,11 @@ function MovieCard(props) {
     }
   };
   return (
-    <div
-      onClick={turnModalOn}
-      style={{
-        marginTop: "10px",
-        borderRadius: "5px",
-        width: "19%",
-        border: "solid 2px black",
-      }}
-    >
-      <img
-        alt="Movie Poster"
-        style={{ marginTop: "10px", width: "60%" }}
-        src={image}
-      ></img>
-      <h3 style={{ fontSize: "2vw" }} className="movieTitle">
-        {props.title}
-      </h3>
+    <div className="movieCard" onClick={turnModalOn}>
+      <img className="moviePoster" alt="Movie Poster" src={image}></img>
+      <h3 className="movieTitle">{props.title}</h3>
       <p className="rating">Vote Average: {props.rating}</p>
-      <div style={{ marginTop: "10px", marginBottom: "10px" }}>
+      <div className="movieCardDetails">
         <button
           className="likeButton"
           onClick={likeFunction}
@@ -136,7 +124,7 @@ function MovieCard(props) {
 
       {showModal && (
         <div id="playListModal" className="modal">
-          <div className="modal-content" style={{ width: "50%" }}>
+          <div className="modal-content">
             <h2>{props.title}</h2>
             <img
               alt="movie Background Image"

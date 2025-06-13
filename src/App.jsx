@@ -5,7 +5,6 @@ import MovieList from "./MovieList";
 import Search from "./Search";
 import Organization from "./Search";
 import { useEffect } from "react";
-import "./MovieModal.css";
 import SideBar from "./SideBar";
 
 const App = () => {
@@ -56,23 +55,8 @@ const App = () => {
     return;
   } else {
     return (
-      <div
-        className="App"
-        style={{
-          display: "flex",
-          minHeight: "100vh",
-          flexDirection: "column",
-          justifyContent: "space-between",
-        }}
-      >
-        <header
-          style={{
-            paddingTop: "20px",
-            paddingBottom: "20px",
-            backgroundColor: "#bf5700",
-            color: "white",
-          }}
-        >
+      <div className="App">
+        <header>
           <h1>Flixter!!!</h1>
           <Organization
             allMovies={movies}
@@ -80,7 +64,7 @@ const App = () => {
             setMovies={setMovies}
           />
         </header>
-        <main style={{ display: "flex", flex: "1" }}>
+        <main>
           <SideBar
             setViewLoadMovies={setViewLoadMovies}
             likedList={favorites}
@@ -88,7 +72,7 @@ const App = () => {
             setMovies={setMovies}
             OGMovies={OGMovies}
           />
-          <div style={{ width: "100%" }}>
+          <div className="movieListContainer">
             <MovieList
               favoritesList={favorites}
               watchedList={watched}
@@ -98,26 +82,13 @@ const App = () => {
               allMovies={movies}
             />
             {viewLoadMovies && (
-              <button
-                style={{
-                  marginTop: "30px",
-                  marginBottom: "30px",
-                }}
-                onClick={() => handleClick()}
-              >
+              <button className="loadMore" onClick={() => handleClick()}>
                 Load More Movies
               </button>
             )}
           </div>
         </main>
-        <footer
-          style={{
-            paddingTop: "20px",
-            paddingBottom: "20px",
-            backgroundColor: "#bf5700",
-            color: "white",
-          }}
-        >
+        <footer>
           <h3>Made by Mahesh Bachu</h3>
         </footer>
       </div>

@@ -1,0 +1,20 @@
+.movieCard {
+    margin-top: 10px;
+    border-radius: 5px;
+    width: 19%;
+    border: solid 2px black;
+}
+.moviePoster {
+    margin-top: 10px;
+    width: 60%;
+}
+.movieTitle {
+    font-size: 2vw;
+}
+.movieCardDetails{
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.modal-content {
+    width: 50%;
+}

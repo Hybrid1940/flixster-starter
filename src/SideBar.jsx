@@ -1,5 +1,5 @@
 import { useState } from "react";
-import "./App.css";
+import "./sideBar.css";
 
 const SideBar = ({
   setMovies,
@@ -21,42 +21,14 @@ const SideBar = ({
     setViewLoadMovies(false);
   };
   return (
-    <nav
-      style={{
-        marginLeft: "6%",
-        marginTop: "40px",
-        display: "flex",
-        flexDirection: "column",
-        alignContent: "center",
-        width: "8%",
-        position: "relative",
-      }}
-    >
-      <button
-        onClick={home}
-        style={{
-          marginTop: "20px",
-          fontSize: "1vw",
-        }}
-      >
+    <nav>
+      <button className="sideButton" onClick={home}>
         Home
       </button>
-      <button
-        onClick={liked}
-        style={{
-          marginTop: "20px",
-          fontSize: "1vw",
-        }}
-      >
+      <button className="sideButton" onClick={liked}>
         Liked
       </button>
-      <button
-        onClick={watched}
-        style={{
-          marginTop: "20px",
-          fontSize: "1vw",
-        }}
-      >
+      <button className="sideButton" onClick={watched}>
         Watched
       </button>
     </nav>
