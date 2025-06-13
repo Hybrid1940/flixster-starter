@@ -56,7 +56,15 @@ const App = () => {
     return;
   } else {
     return (
-      <div className="App">
+      <div
+        className="App"
+        style={{
+          display: "flex",
+          minHeight: "100vh",
+          flexDirection: "column",
+          justifyContent: "space-between",
+        }}
+      >
         <header
           style={{
             paddingTop: "20px",

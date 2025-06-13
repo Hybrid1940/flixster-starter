@@ -29,6 +29,8 @@ const SideBar = ({
         flexDirection: "column",
         alignContent: "center",
         width: "8%",
+        position: "relative",
+        border: "3px solid red",
       }}
     >
       <button
