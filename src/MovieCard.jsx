@@ -110,7 +110,7 @@ function MovieCard(props) {
       <h3 style={{ fontSize: "2vw" }} className="movieTitle">
         {props.title}
       </h3>
-      <p className="rating">Rating: {props.rating}</p>
+      <p className="rating">Vote Average: {props.rating}</p>
       <div style={{ marginTop: "10px", marginBottom: "10px" }}>
         <button
           className="likeButton"
