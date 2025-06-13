@@ -101,29 +101,32 @@ Deployed Application (**required**): [Flixster Deployed Site](https://flixster-s
   - [x] The Watched page displays all watched movies in a grid view.
 
 ### Walkthrough Video
-
-`TODO://` Add the embedded URL code to your animated app walkthrough below, `ADD_EMBEDDED_CODE_HERE`. Make sure the video or gif actually renders and animates when viewing this README. Ensure your walkthrough showcases the presence and/or functionality of all features you implemented above (check them off as you film!). Pay attention to any **VIDEO WALKTHROUGH SPECIAL INSTRUCTIONS** checkboxes listed above to ensure graders see the full functionality of your website! (🚫 Remove this paragraph after adding walkthrough video)
-
-`ADD_EMBEDDED_CODE_HERE`
-
+<div>
+    <a href="https://www.loom.com/share/31965fac5d0b486f8e5a0fc01b4d034d">
+      <p>flixter - Watch Video</p>
+    </a>
+    <a href="https://www.loom.com/share/31965fac5d0b486f8e5a0fc01b4d034d">
+      <img style="max-width:300px;" src="https://cdn.loom.com/sessions/thumbnails/31965fac5d0b486f8e5a0fc01b4d034d-ec01338abe13e5db-full-play.gif">
+    </a>
+  </div>
 ### Reflection
 
 * Did the topics discussed in your labs prepare you to complete the assignment? Be specific, which features in your weekly assignment did you feel unprepared to complete?
 
-Add your response here
+The topics dicsussed adequatley prepared me to use useState and useEffect in my project and make a capable project
 
 * If you had more time, what would you have done differently? Would you have added additional features? Changed the way your project responded to a particular event, etc.
   
-Add your response here
+I would have implimented more error handling and some more styling
 
 * Reflect on your project demo, what went well? Were there things that maybe didn't go as planned? Did you notice something that your peer did that you would like to try next time?
 
-Add your response here
+I had a lot of time this week so I was able to know out a lot of the project but it was still a difficult process.
 
 ### Open-source libraries used
 
-- Add any links to open-source libraries used in your project.
+N/A
 
 ### Shout out
 
-Give a shout out to somebody from your cohort that especially helped you during your project. This can be a fellow peer, instructor, TA, mentor, etc
+to Virsaviya for being such a trooper with all my questions
