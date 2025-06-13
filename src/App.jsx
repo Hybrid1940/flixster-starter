@@ -80,7 +80,7 @@ const App = () => {
             setMovies={setMovies}
           />
         </header>
-        <main style={{ display: "flex" }}>
+        <main style={{ display: "flex", flex: "1" }}>
           <SideBar
             setViewLoadMovies={setViewLoadMovies}
             likedList={favorites}
