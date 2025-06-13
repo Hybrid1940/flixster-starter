@@ -21,7 +21,7 @@ const SideBar = ({
     setViewLoadMovies(false);
   };
   return (
-    <div
+    <nav
       style={{
         marginLeft: "6%",
         marginTop: "40px",
@@ -36,7 +36,6 @@ const SideBar = ({
         style={{
           marginTop: "20px",
           fontSize: "1vw",
-          backgroundColor: "#bf5700",
         }}
       >
         Home
@@ -46,7 +45,6 @@ const SideBar = ({
         style={{
           marginTop: "20px",
           fontSize: "1vw",
-          backgroundColor: "#bf5700",
         }}
       >
         Liked
@@ -56,12 +54,11 @@ const SideBar = ({
         style={{
           marginTop: "20px",
           fontSize: "1vw",
-          backgroundColor: "#bf5700",
         }}
       >
         Watched
       </button>
-    </div>
+    </nav>
   );
 };
 

@@ -118,7 +118,6 @@ function MovieCard(props) {
           style={{
             marginRight: "10px",
             color: likeColor,
-            backgroundColor: "#bf5700",
           }}
         >
           &#x2665;
@@ -129,7 +128,6 @@ function MovieCard(props) {
           style={{
             marginRight: "10px",
             color: watchColor,
-            backgroundColor: "#bf5700",
           }}
         >
           &#10004;

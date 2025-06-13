@@ -13,7 +13,7 @@ function MovieList({
 }) {
   console.log({ allMovies });
   return (
-    <div
+    <section
       style={{
         flexWrap: "wrap",
         marginTop: "40px",
@@ -44,7 +44,7 @@ function MovieList({
           />
         );
       })}
-    </div>
+    </section>
   );
 }
 

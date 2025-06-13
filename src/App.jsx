@@ -94,7 +94,6 @@ const App = () => {
                 style={{
                   marginTop: "30px",
                   marginBottom: "30px",
-                  backgroundColor: "#bf5700",
                 }}
                 onClick={() => handleClick()}
               >
