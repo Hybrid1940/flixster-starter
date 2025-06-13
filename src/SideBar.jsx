@@ -31,13 +31,34 @@ const SideBar = ({
         width: "8%",
       }}
     >
-      <button onClick={home} style={{ marginTop: "20px", fontSize: "1vw" }}>
+      <button
+        onClick={home}
+        style={{
+          marginTop: "20px",
+          fontSize: "1vw",
+          backgroundColor: "#bf5700",
+        }}
+      >
         Home
       </button>
-      <button onClick={liked} style={{ marginTop: "20px", fontSize: "1vw" }}>
+      <button
+        onClick={liked}
+        style={{
+          marginTop: "20px",
+          fontSize: "1vw",
+          backgroundColor: "#bf5700",
+        }}
+      >
         Liked
       </button>
-      <button onClick={watched} style={{ marginTop: "20px", fontSize: "1vw" }}>
+      <button
+        onClick={watched}
+        style={{
+          marginTop: "20px",
+          fontSize: "1vw",
+          backgroundColor: "#bf5700",
+        }}
+      >
         Watched
       </button>
     </div>

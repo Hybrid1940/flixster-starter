@@ -61,7 +61,7 @@ const App = () => {
           style={{
             paddingTop: "20px",
             paddingBottom: "20px",
-            backgroundColor: "#454a52",
+            backgroundColor: "#bf5700",
             color: "white",
           }}
         >
@@ -91,7 +91,11 @@ const App = () => {
             />
             {viewLoadMovies && (
               <button
-                style={{ marginTop: "30px", marginBottom: "30px" }}
+                style={{
+                  marginTop: "30px",
+                  marginBottom: "30px",
+                  backgroundColor: "#bf5700",
+                }}
                 onClick={() => handleClick()}
               >
                 Load More Movies
@@ -99,7 +103,14 @@ const App = () => {
             )}
           </div>
         </main>
-        <footer>
+        <footer
+          style={{
+            paddingTop: "20px",
+            paddingBottom: "20px",
+            backgroundColor: "#bf5700",
+            color: "white",
+          }}
+        >
           <h3>Made by Mahesh Bachu</h3>
         </footer>
       </div>

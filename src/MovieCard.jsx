@@ -115,14 +115,22 @@ function MovieCard(props) {
         <button
           className="likeButton"
           onClick={likeFunction}
-          style={{ marginRight: "10px", color: likeColor }}
+          style={{
+            marginRight: "10px",
+            color: likeColor,
+            backgroundColor: "#bf5700",
+          }}
         >
           &#x2665;
         </button>
         <button
           className="watchButton"
           onClick={watchFunction}
-          style={{ marginRight: "10px", color: watchColor }}
+          style={{
+            marginRight: "10px",
+            color: watchColor,
+            backgroundColor: "#bf5700",
+          }}
         >
           &#10004;
         </button>
